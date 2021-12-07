@@ -50,6 +50,9 @@ Overall the results were pretty good, though we could have had more gains in acc
 
 ## REFERENCES
 https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
+
 https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270
+
 https://towardsdatascience.com/sentiment-analysis-in-10-minutes-with-bert-and-hugging-face-294e8a04b671
+
 https://research.google/pubs/pub47751/
