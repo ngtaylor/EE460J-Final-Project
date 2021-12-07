@@ -40,8 +40,6 @@ We also used Google’s BERT (Bidirectional Encoder Representations from Transfo
 
 ![bertfigure](https://user-images.githubusercontent.com/45768742/145123628-cbbe9c55-1d25-4f5e-8a4a-6bd388a1ba4d.png)
 
-    Figure from Google’s BERT paper
-
 BERT makes use of two training strategies: Masked LM (MLM) and Next Sentence Prediction (NSP), where both are trained together with the goal of reducing the combined loss function of the two strategies. MLM is a strategy that involves replacing 15% of the words in every sequence with a MASK token. Based on the context of the non-masked words in the sequence, MLM attempts to predict what the masked words originally were. These predictions of the masked words are then fed into BERT’s loss function. For NSP, pairs of sentences are fed into the model, and the trainer predicts if the second sentence in the pair follows the first one in the original text or not. Half the pairs have the second sentence be the true second sentence and the other half of the pairs have a second sentence taken randomly from other sentences. The combined loss functions of these two strategies are then minimized.
 
 Using our dataset with BERT required us to do some additional preprocessing to ensure that it was formatted correctly for the model. Since BERT is a text prediction model, we had to drop all additional features other than the tweet text itself and also the target values. This newly formatted Pandas dataframe had to then be split into training set, validation set and test set, with a 70/30 split on training/validation and test and then a 80/20 split on the test and validation sets. The BERT model utilizes TensorFlow datasets, so we had to convert our three dataframes into TensorFlow datasets that were usable by the model. We fit the model with 1 epoch and a learning rate of .00003. We ended up with a validation accuracy of 0.8661 and a test accuracy of 0.8645.
@@ -54,4 +52,4 @@ Overall the results were pretty good, though we could have had more gains in acc
 https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
 https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270
 https://towardsdatascience.com/sentiment-analysis-in-10-minutes-with-bert-and-hugging-face-294e8a04b671
-
+https://research.google/pubs/pub47751/
