@@ -37,3 +37,4 @@ Another observation that we made was that increasing the amount of epochs from 6
 
 ### BERT
 ## CONCLUSION
+## REFERENCES
