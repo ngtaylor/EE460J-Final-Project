@@ -40,7 +40,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 ## INTRODUCTION
 ## OVERVIEW OF DATASET
 The dataset we chose for this project is a set of 1.6 million tweets that were categorized as negative or positive based on the emojis used in the tweet. The dataset is found in the Kaggle website under the title, ‘Sentiment140 Dataset with 1.6 Million Tweets.’ The target column uses the number 4 to categorize positive tweets and number 0 to categorize negative tweets. There are five other features in the dataset. The ‘id’ column contains a list of ids for the tweets. The ‘date’ column has the date, time, and timezone the tweet was tweeted. There is a ‘flag’ column that only contains the input “NO_QUERY” in every row. The next two features are the ‘user’ column containing the username of the person who tweeted the tweet and the ‘text’ column which contains the tweet itself. 
-![Image]https://keep.google.com/u/3/media/v2/1j1PLJv5O0dtsXLLZBhLRWLShgWfDRE4o_f9kQf4gKTv2YNbrnpDPKNgQKMO73g/1IC4W_kaLGzdcNr6MhHUJGZrOY0eTD5PdKwWyhLCPNpivXwpPMUZu1nRj0mVCVw?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp
+![Image](https://keep.google.com/u/3/media/v2/1j1PLJv5O0dtsXLLZBhLRWLShgWfDRE4o_f9kQf4gKTv2YNbrnpDPKNgQKMO73g/1IC4W_kaLGzdcNr6MhHUJGZrOY0eTD5PdKwWyhLCPNpivXwpPMUZu1nRj0mVCVw?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
 ## DATA PREPROCESSING
 ## MODELS
 ### Neural Network
