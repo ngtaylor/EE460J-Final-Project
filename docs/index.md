@@ -29,5 +29,12 @@ Our model predicted with an accuracy of 0.7969, with 81% of the tweets with nega
 Our ROC curve depicted below also reflects this accuracy, as our AUC is .80, or .7969 rounded to the nearest tenth. 
 ![roc_curve](https://user-images.githubusercontent.com/45761912/145101255-7a2d4989-3966-4447-afb5-e39ce2944b7d.png)
 
+One observation we made about our dataset after using the neural network model is that there seems to be a correlation between the day of the week and the ratio of positive to negative tweets. We hypothesized that Monday would have the highest ratio of negative to positive sentiment in the dataset, but found that it was actually Wednesday and Thursday that had the highest ratio of negative to positive sentiment.
+
+![train_ratio](https://user-images.githubusercontent.com/45761912/145103707-38beb06e-1bbc-4394-ae24-8e337d31a9bd.png)
+![test_ratio](https://user-images.githubusercontent.com/45761912/145103712-e71a3407-d35f-4ef0-b7eb-1bf92e0cc833.png)
+
+Another observation that we made was that increasing the amount of epochs from 6 to 30 had little effect on the accuracy of the model, but decreasing the amount of epochs from 6 to 1 worsened the model accuracy.
+
 ### BERT
 ## CONCLUSION
