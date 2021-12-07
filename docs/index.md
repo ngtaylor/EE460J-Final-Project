@@ -38,3 +38,4 @@ Another observation that we made was that increasing the amount of epochs from 6
 ### BERT
 ## CONCLUSION
 ## REFERENCES
+https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
