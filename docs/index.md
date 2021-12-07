@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Sentiment Analysis using Neural Network and BERT
 
 You can use the [editor on GitHub](https://github.com/ngtaylor/EE460J-Final-Project/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
