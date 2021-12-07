@@ -39,7 +39,8 @@ Another observation that we made was that increasing the amount of epochs from 6
 We also used Google’s BERT (Bidirectional Encoder Representations from Transformers) model to conduct sentiment analysis on the dataset of tweets we used. BERT uses Transformer, which is a mechanism that learns contextual relations between words in text. This model is considered bidirectional because it reads an entire sequence of words at once, as opposed to a directional model that reads a sequence of words from left to right or vice versa. This attribute of BERT allows it to make full use of a word's surroundings to learn the context for which it is used. 
 
 ![bertfigure](https://user-images.githubusercontent.com/45768742/145123628-cbbe9c55-1d25-4f5e-8a4a-6bd388a1ba4d.png)
-Figure from Google’s BERT paper
+
+    Figure from Google’s BERT paper
 
 BERT makes use of two training strategies: Masked LM (MLM) and Next Sentence Prediction (NSP), where both are trained together with the goal of reducing the combined loss function of the two strategies. MLM is a strategy that involves replacing 15% of the words in every sequence with a MASK token. Based on the context of the non-masked words in the sequence, MLM attempts to predict what the masked words originally were. These predictions of the masked words are then fed into BERT’s loss function. For NSP, pairs of sentences are fed into the model, and the trainer predicts if the second sentence in the pair follows the first one in the original text or not. Half the pairs have the second sentence be the true second sentence and the other half of the pairs have a second sentence taken randomly from other sentences. The combined loss functions of these two strategies are then minimized.
 
