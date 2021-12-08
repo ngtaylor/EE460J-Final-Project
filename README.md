@@ -1,3 +1,13 @@
 # EE460J-Final-Project
 EE460J Fall 2021 Final Project
+
+## Team Members
+* Gywneth Douglas
+* Kelly Wang
+* Nick Taylor
+* Tatsushi Matsumoto
+* Nicky Dahl
+* Matthew Withey
+
+## Project Report
 https://ngtaylor.github.io/EE460J-Final-Project/
