@@ -67,3 +67,5 @@ Overall the results were pretty good, though we could have had more gains in acc
 <https://towardsdatascience.com/sentiment-analysis-in-10-minutes-with-bert-and-hugging-face-294e8a04b671>
 
 <https://research.google/pubs/pub47751/>
+
+https://www.analyticsvidhya.com/blog/2021/06/twitter-sentiment-analysis-a-nlp-use-case-for-beginners/
