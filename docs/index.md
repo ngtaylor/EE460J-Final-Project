@@ -2,12 +2,11 @@
 
 ## TEAM MEMBERS
 *Nick Taylor
-*Tatsushi Matsumoto
+*Tatsuhi Matsumoto
 *Kelly Wang
 *Gwyneth Douglas
 *Matthew Withey
 *Nicky Dahl
-
 
 ## INTRODUCTION
 
