@@ -58,6 +58,7 @@ Using our dataset with BERT required us to do some additional preprocessing to e
 Overall the results were pretty good, though we could have had more gains in accuracy with an increase in epochs. We used the base BERT model, which is a 12-layer, 110 million parameter neural network and had fairly good results, but there is also a large BERT model that is a 24-layer, 340 million parameter neural network that is likely to have yielded even better results.
 
 ## CONCLUSION
+Out of our two main approaches to sentiment analysis, we have found that the BERT model yields a higher validation accuracy than a neural network approach. This is likely due to the fact that the BERT model was created in order to learn and predict relationships of words in particular. In the future, we may further improve the BERT model by using a larger and more advanced version of it. However, with the BERT model, there is a tradeoff of higher accuracy for a longer computation time, so that is a drawback to this type of model. While the neural network was about 6% less accurate than the BERT model, it ran 6 epochs in 30 minutes, while the BERT model took 8 hours to run 1 epoch. Another observation of our results is that we tried several common binary classification models in the end, and 3 models (Naive Bayes, SVC, Logistic Regression) were able to perform better than or equal to our neural network. Overall, we feel as though we were able to get reasonable prediction accuracy with both of our main models, but the BERT model is ideal for sentiment analysis. 
 
 ## REFERENCES
 <https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/>
@@ -70,4 +71,4 @@ Overall the results were pretty good, though we could have had more gains in acc
 
 <https://www.analyticsvidhya.com/blog/2021/06/twitter-sentiment-analysis-a-nlp-use-case-for-beginners/>
 
-<https://www.tensorflow.org/text/tutorials/classify_text_with_bert>
+<https://www.tensorflow.org/text/tutorials/classify_text_with_bert/>
