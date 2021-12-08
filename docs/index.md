@@ -1,12 +1,12 @@
 # Sentiment Analysis using Neural Networks and BERT
 
 ## TEAM MEMBERS
-  *Nick Taylor
-  *Tatsuhi Matsumoto
-  *Kelly Wang
-  *Gwyneth Douglas
-  *Matthew Withey
-  *Nicky Dahl
+  * Nick Taylor
+  * Tatsuhi Matsumoto
+  * Kelly Wang
+  * Gwyneth Douglas
+  * Matthew Withey
+  * Nicky Dahl
 
 ## INTRODUCTION
 
