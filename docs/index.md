@@ -69,3 +69,5 @@ Overall the results were pretty good, though we could have had more gains in acc
 <https://research.google/pubs/pub47751/>
 
 https://www.analyticsvidhya.com/blog/2021/06/twitter-sentiment-analysis-a-nlp-use-case-for-beginners/
+
+https://www.tensorflow.org/text/tutorials/classify_text_with_bert
