@@ -1,4 +1,4 @@
-# Sentiment Analysis using Neural Networks and BERT
+# Sentiment Analysis of Tweets using Neural Networks and BERT
 ![twittermatrix](https://user-images.githubusercontent.com/45768742/145126784-c7e0c657-77ef-44de-a2df-7af94014a884.jpg)
 
 ## TEAM MEMBERS
