@@ -57,6 +57,29 @@ Using our dataset with BERT required us to do some additional preprocessing to e
 
 Overall the results were pretty good, though we could have had more gains in accuracy with an increase in epochs. We used the base BERT model, which is a 12-layer, 110 million parameter neural network and had fairly good results, but there is also a large BERT model that is a 24-layer, 340 million parameter neural network that is likely to have yielded even better results.
 
+### Common Classification Models
+We also chose to use common binary classification algorithms to compare both our neural net and BERT models to. These new models each vary in complexity, runtime, and accuracy. Before using these models, the actual text from the tweets found within the dataset must be transformed into a usable data type. This is done by converting the text into a matrix of TF-IDF features using the TfidfVectorizer found in sklearn. This simply means that the text found within the dataset is transformed into a vector of numbers. The TF-IDF feature matrix is then fit using a training dataset.
+
+#### Naive Bayes
+The first method used for comparison was the Naive Bayes method in sklearn. Naive Bayes is a supervised learning algorithm based on applying Bayes’ theorem. In addition, we can use the Naive Bayes method when there are strong assumptions of conditional independence between every pair of features in the dataset. Due to text being the only feature imputed into the model, this assumption holds true. Overall, this is a very simple model to implement and has a very quick runtime. Naive Bayes produced an accuracy score of 0.8015.
+![naivebayes](https://user-images.githubusercontent.com/45768742/145261736-3fba61d2-89e7-4492-83e1-5feee6d2e874.png)
+
+#### Linear Support Vector Classification (SVC)
+The next method we used was linear support vector classification (SVC) in sklearn. Linear SVC finds the linear hyperplane that separates classes with the maximum margin. Once this hyperplane is calculated, we can input our test data set to generate predictions. Overall, this method was very easy to implement, had low runtime, and tied for the highest accuracy score among our common classification methods with a score of 0.8265.
+![src](https://user-images.githubusercontent.com/45768742/145261849-2d659898-4384-4526-90ba-abd504a1dc3e.png)
+
+#### Logistic Regression
+The next method used was using the logistic regression classifier model found in sklearn. Due to these being comparison models, there was not an extensive amount of hyperparameter tuning done to these models. Despite this, we found that logistic regression performed much better when the regularization coefficient was set to a value of 2.875. In addition, the maximum number of iterations was set to 200. Maximum iteration values greater than 200 had negligible improvements while also having much larger run times. Overall, this model was relatively easy to tune, had low runtime, and tied for the highest accuracy score among our common classification methods with a score of 0.8265.
+![logistic](https://user-images.githubusercontent.com/45768742/145261960-2c5a7ff5-91a4-4156-a0e6-9f646a9659e9.png)
+
+#### Random Forest Classification
+The next method we tried was using the random forest classifier ensemble method found in sklearn. This algorithm works by generating a forest of decision trees using a random subset of features for each tree, then averaging each tree’s outputs for classification purposes. The maximum depth of each tree was the only hyperparameter being tuned for this model. The performance of this model increased when the maximum depth was set to a higher number. We settled on using a depth of 32 for our random forest due to values larger than this having negligible performance gains and much longer runtimes. Our random forest model produced the lowest accuracy score among our common classification methods with a score of 0.7461.
+![randomforest](https://user-images.githubusercontent.com/45768742/145262059-3e61ec34-49ca-4c97-aae0-2cac0197b37d.png)
+
+#### XGBoost Classifier
+The last common classification method we used was XGBoost. XGBoost implements the gradient boosting decision tree algorithm for optimization. Much like the other methods, there was not extensive hyperparameter tuning done due to this model only being used as a quick comparison. We used a max depth of 12 for the decision trees. Values larger than 12 produced negligible performance gains at the cost of much longer run times. Overall, after a small amount of parameter tuning, XGBoost produced an accuracy score of 0.7563. 
+![xgboost](https://user-images.githubusercontent.com/45768742/145262234-b8e0e89e-1b39-4570-86e2-1cdc877ab82f.png)
+
 ## CONCLUSION
 Out of our two main approaches to sentiment analysis, we have found that the BERT model yields a higher validation accuracy than a neural network approach. This is likely due to the fact that the BERT model was created in order to learn and predict relationships of words in particular. In the future, we may further improve the BERT model by using a larger and more advanced version of it. However, with the BERT model, there is a tradeoff of higher accuracy for a longer computation time, so that is a drawback to this type of model. While the neural network was about 6% less accurate than the BERT model, it ran 6 epochs in 30 minutes, while the BERT model took 8 hours to run 1 epoch. Another observation of our results is that we tried several common binary classification models in the end, and 3 models (Naive Bayes, SVC, Logistic Regression) were able to perform better than or equal to our neural network. Overall, we feel as though we were able to get reasonable prediction accuracy with both of our main models, but the BERT model is ideal for sentiment analysis. 
 
