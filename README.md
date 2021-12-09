@@ -2,7 +2,7 @@
 EE460J Fall 2021 Final Project
 
 ## Team Members
-* Gywneth Douglas
+* Gwyneth Douglas
 * Kelly Wang
 * Nick Taylor
 * Tatsushi Matsumoto
