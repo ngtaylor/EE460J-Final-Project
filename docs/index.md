@@ -3,7 +3,7 @@
 
 ## TEAM MEMBERS
   * Nick Taylor
-  * Tatsuhi Matsumoto
+  * Tatsushi Matsumoto
   * Kelly Wang
   * Gwyneth Douglas
   * Matthew Withey
