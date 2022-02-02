@@ -1,4 +1,4 @@
-# EE460J-Final-Project
+# EE460J-Final-Project - Sentiment Analysis of Tweets
 EE460J Fall 2021 Final Project
 
 ## Team Members
